@@ -14,7 +14,7 @@ fasthadd-wrapper.spec
 build.sh
 README
 
-Bump the version up each time! Change the location of files created above.
+Bump the version up each time! Building will be done in /tmp area.
 
 Build:
 
@@ -24,12 +24,12 @@ Package will be here: `/tmp/$USER/fasthadd/RPMS/x86_64/`
 Copy to (any) P5 machine (for DQM):
 
 `scp -o ProxyCommand="ssh cmsusr.cern.ch nc fu-c2f11-15-03.cms 22" 
-~/tmp/${USER}RPMS/x86_64/fasthadd-12.0-1.el7.cern.x86_64.rpm 
+~/tmp/${USER}RPMS/x86_64/fasthadd-13.0-1.x86_64.rpm 
 fu-c2f11-15-03.cms:/nfshome0/${USER}/`
 
 Intall on P5 machine:
 
-`sudo yum install|localinstall fasthadd-12.0-1.el7.cern.x86_64.rpm`
+`sudo yum install|localinstall fasthadd-13.0-1.x86_64.rpm`
 
 `hadd` part of the package is used on P5 BUs to merge per run ROOT files 
 from multiple FUs before uploading a single file to the DQM GUI.

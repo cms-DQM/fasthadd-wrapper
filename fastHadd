@@ -1,7 +1,10 @@
 #!/bin/bash
 
 env_init=(
-"/opt/offline/slc7_amd64_gcc700/external/fasthadd/2.3-pafccj4"
+"/opt/offline/slc7_amd64_gcc900/external/fasthadd/2.3-ljfedo5"
+"/opt/offline/cc8_amd64_gcc9/external/fasthadd/2.3-ljfedo5"
+"/opt/offline/slc7_amd64_gcc900/external/fasthadd/2.3-ghbfee11"
+"/opt/offline/slc7_amd64_gcc820/external/fasthadd/2.3-bcolbf7"
 )
 
 for env in "${env_init[@]}"; do

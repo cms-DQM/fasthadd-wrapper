@@ -1,9 +1,9 @@
 Name:           fasthadd
-Version:        12.0
-Release:        1%{?dist}
+Version:        13.0
+Release:        1
 License:        GPLv2+
 Summary:        A wrapper around fasthadd and hadd utilities
-
+Obsoletes:      fasthadd = 12.0-el7.cern, fasthadd = 11.0-el7.cern, fasthadd = 10.0-el7.cern
 %description
 A wrapper around fasthadd and had utilities. Contains only the files that start the respective program.
 
