@@ -1,0 +1,18 @@
+#!/bin/bash
+
+env_init=(
+"/opt/offline/slc7_amd64_gcc700/external/fasthadd/2.3-pafccj4"
+)
+
+for env in "${env_init[@]}"; do
+         test -d "$env" || continue
+
+         source "$env/etc/profile.d/init.sh"
+         exec "$env/bin/fastHadd" "$@"
+
+
+         exit # unreachable
+done
+
+echo "fastHadd not found, make sure external+fasthadd rpm is installed (via cmsdist)"
+exit 1

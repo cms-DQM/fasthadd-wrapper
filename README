@@ -1,0 +1,35 @@
+This package just adds `fastHadd` program to the path. The program 
+itself has to installed from CMSDIST: 
+https://github.com/cms-sw/cmsdist/blob/IB/CMSSW_11_3_X/master/fasthadd.spec 
+(backport clanup changes from cc8 branch). We need two script files and 
+a spec.
+
+These scripts that will be installed into the target machines. They find 
+the tool that is being installed.
+
+Files:
+fastHadd
+fasthadd.spec
+fasthadd-wrapper.spec
+build.sh
+README
+
+Bump the version up each time! Change the location of files created above.
+
+Build:
+
+./build.sh
+
+Package will be here: `/tmp/$USER/fasthadd/RPMS/x86_64/`
+Copy to (any) P5 machine (for DQM):
+
+`scp -o ProxyCommand="ssh cmsusr.cern.ch nc fu-c2f11-15-03.cms 22" 
+~/tmp/${USER}RPMS/x86_64/fasthadd-12.0-1.el7.cern.x86_64.rpm 
+fu-c2f11-15-03.cms:/nfshome0/${USER}/`
+
+Intall on P5 machine:
+
+`sudo yum install|localinstall fasthadd-12.0-1.el7.cern.x86_64.rpm`
+
+`hadd` part of the package is used on P5 BUs to merge per run ROOT files 
+from multiple FUs before uploading a single file to the DQM GUI.
