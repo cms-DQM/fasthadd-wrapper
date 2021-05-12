@@ -1,0 +1,10 @@
+#This file contains a list matching SCRAM_ARCH, fasthadd version, ROOT version and CMSSW version in cmsdist installation
+
+# CentOS 8
+cc8_amd64_gcc9 external+fasthadd+2.3-ljfedo5 lcg+root+6.22.08-ljfedo cms+cmssw+CMSSW_11_3_0
+
+# CentOS 7
+slc7_amd64_gcc900 external+fasthadd+2.3-ljfedo5  lcg+root+6.22.08-ljfedo cms+cmssw+CMSSW_11_3_0
+slc7_amd64_gcc900 external+fasthadd+2.3-ghbfee11 lcg+root+6.22.06 cms+cmssw+CMSSW_11_2_4
+slc7_amd64_gcc820 external+fasthadd+2.3-bcolbf7 lcg+root+6.20.06-bcolbf cms+cmssw+CMSSW_11_1_5
+

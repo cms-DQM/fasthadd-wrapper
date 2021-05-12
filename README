@@ -33,3 +33,7 @@ Intall on P5 machine:
 
 `hadd` part of the package is used on P5 BUs to merge per run ROOT files 
 from multiple FUs before uploading a single file to the DQM GUI.
+
+Consult VERSION_MAP file on which corresponding cmsdist fasthadd and ROOT versions to install.
+Only one version per machine is sufficient to install from the given list,
+preference should normally be given to version related to the most recent CMSSW and ROOT version.
