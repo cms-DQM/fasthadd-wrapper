@@ -8,11 +8,11 @@ These scripts that will be installed into the target machines. They find
 the tool that is being installed.
 
 Files:
-fastHadd
-fasthadd.spec
+hadd
 fasthadd-wrapper.spec
 build.sh
 README
+VERSION_MAP
 
 Bump the version up each time! Building will be done in /tmp area.
 

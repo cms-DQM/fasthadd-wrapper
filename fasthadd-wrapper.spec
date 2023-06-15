@@ -1,23 +1,18 @@
 Name:           fasthadd
-Version:        13.0
-Release:        1
+Version:        14
+Release:        0
 License:        GPLv2+
 Summary:        A wrapper around fasthadd and hadd utilities
 Obsoletes:      fasthadd = 12.0-el7.cern, fasthadd = 11.0-el7.cern, fasthadd = 10.0-el7.cern
 %description
-A wrapper around fasthadd and had utilities. Contains only the files that start the respective program.
+A wrapper around hadd utilities (fastHadd is retired). Contains only the files that start the respective program.
 
 %build
 %install
 mkdir -p %{buildroot}/usr/bin/
-echo "installed 1"
-install -m 755 /tmp/fasthadd/fastHadd %{buildroot}/usr/bin/fastHadd
-echo "installed 2"
-install -m 755 /tmp/fasthadd/hadd %{buildroot}/usr/bin/hadd
-echo "installed 3"
+install -m 755 /tmp/${USER}/fasthadd/hadd %{buildroot}/usr/bin/hadd
 
 %files
-/usr/bin/fastHadd
 /usr/bin/hadd
 
 %changelog

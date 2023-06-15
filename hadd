@@ -1,10 +1,9 @@
 #!/bin/bash
 
 env_init=(
+"/opt/offline/el8_amd64_gcc11/lcg/root/6.26.11-fec5b250e1cd56b91a094709de26e5b8"
+"/opt/offline/slc7_amd64_gcc11/lcg/root/6.26.11-fec5b250e1cd56b91a094709de26e5b8"
 "/opt/offline/slc7_amd64_gcc900/lcg/root/6.22.08-ljfedo"
-"/opt/offline/cc8_amd64_gcc9/lcg/root/6.22.08-ljfedo"
-"/opt/offline/slc7_amd64_gcc900/lcg/root/6.22.06"
-"/opt/offline/slc7_amd64_gcc820/lcg/root/6.20.06-bcolbf"
 )
 
 for env in "${env_init[@]}"; do
